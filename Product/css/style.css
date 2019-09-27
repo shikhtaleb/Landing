@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+
+body {
+    direction: ltr;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* St. Heading */
+
+header {
+    overflow: hidden;
+}
+
+header.header video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+header.header .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+header.header .overlay .header-text {
+    margin-top: 7rem;
+}
+
+header.header .overlay .header-text h3 {
+    font-size: 36px;
+    margin-bottom: 35px;
+    line-height: 46px;
+    font-weight: bold;
+}
+
+header.header .overlay .header-text p {
+    font-size: 18px;
+    color: #5d5d5d;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+header.header .overlay .header-text .buttons {
+    border-radius: 0;
+    font-family: 'Cairo', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 8px 0;
+}
+
+header.header .overlay .header-text .buttons button {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+header.header .overlay .header-text .buttons button:first-of-type {
+    background-color: #7936b2;
+    color: white;
+    margin-right: 15px;
+}
+
+header.header .overlay .header-text .buttons button:last-of-type {
+    background-color: transparent;
+    color: #7936b2;
+    transition: all 0.5s ease;
+}
+
+header.header .overlay .header-text .buttons button:last-of-type:hover {
+    background-color: #7936b2;
+    color: white;
+}
+
+header.header .overlay .product-img {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+header.header .overlay .product-img img:first-of-type {
+    width: 100%;
+}
+
+header.header .overlay .product-img img.label {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+header.header .overlay .product-img p {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+header.header .overlay .product-img p span {
+    display: block;
+}
+
+header.header .overlay .navbar {
+    margin-bottom: 26px;
+}
+/* End. Heading */
+
+/* St. Features */
+section.features {
+    padding: 25px 0;
+    background-color: white;
+}
+
+section.features .title {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+section.features .title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+    height: 2px;
+    background-color: #7233a2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.features .title h3 {
+    font-size: 36px;
+    color: #555555;
+    line-height: 80px;
+}
+
+section.features .feature {
+    padding: 70px 0;
+}
+
+section.features .feature:not(:last-of-type) {
+    border-bottom: 3px solid #eeeeee;
+}
+
+section.features .feature .media .media-body h5 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7233a2;
+    border-left: 2px solid #7233a2;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+section.features .feature .media .media-body p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #555555;
+}
+
+section.features .feature .media img {
+    margin: 0 4rem;
+}
+
+section.features .feature .media .media-body {
+    margin-top: 50px;
+}
+
+section.features .feature:nth-of-type(even) {
+    text-align: right;
+}
+
+section.features .feature:nth-of-type(even) .media .media-body h5 {
+    border-left: 0;
+    border-right: 2px solid #7233a2;
+}
+
+/* End. Features */
+
+/* St. Pricing */
+
+section.prices {
+    padding: 55px 0;
+    background-color: #f7f7f7;
+}
+
+section.prices .title h3 {
+    font-size: 40px;
+    color: #555555;
+}
+
+section.prices .plan {
+    background-color: white;
+    color: #a9a9ab;
+    border: 2px solid #ededed;
+    padding-top: 15px;
+    margin-top: 100px;
+}
+
+section.prices .plan p {
+    color: #a044ff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section.prices .plan h3 {
+    font-size: 50px;
+    margin: 30px auto;
+}
+
+section.prices .plan h3 span {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+section.prices .plan ul li {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+section.prices .plan ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.prices .plan button {
+    border: 1px solid #7233a2;
+    background-color: white;
+    color: #7233a2;
+    font-family: 'Cairo', sans-serif;
+    border-radius: 0;
+    padding: .5rem  1.75rem;
+}
+
+section.prices .plan button:hover {
+    color: white;
+    background-color: #7233a2;
+}
+
+section.prices .plan.popular {
+    margin-top: 55px;
+    padding-top: 60px;
+}
+
+section.prices .plan.popular button {
+    border: 1px solid #7233a2;
+    background-color: #7233a2;
+    color: white;
+}
+
+section.prices .plan.popular button:hover {
+    background-color: white;
+    color: #7233a2;
+}
+/* End. Pricing */
+
+/* St. Questions */
+section.faq {
+    padding: 55px 0;
+    background-color: white;
+}
+
+section.faq .title .h3 {
+    font-size: 30px;
+    color: #555555;
+}
+
+section.faq .card {
+    margin: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 0;
+}
+
+section.faq .card .card-header {
+    background-color: transparent;
+    border-bottom: 0;
+}
+
+section.faq .card .card-header h5 a {
+    font-size: 18px;
+    color: #555555;
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+section.faq .card .card-header h5 a i {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+section.faq .card .card-block {
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 25px;
+    padding: 0 1.25rem 1.25rem;
+}
+
+section.faq .title {
+    margin-bottom: 50px;
+}
+
+section.faq .card .card-header h5 a:hover,
+section.faq .card .card-header h5 a:focus {
+    text-decoration: none;
+}
+
+section.faq .card .card-header h5 a.collapsed i:before {
+    content: '\f107';
+}
+
+/* End. Questions */
+
+/* St. Video */
+
+section.video {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+section.video video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+section.video .overlay {
+    background-color: rgba(106, 48, 147, 0.7);
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+section.video button {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    transform: translate(50%, -50%);
+}
+
+section.video button:focus {
+    outline: none;
+}
+
+section.video button i {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    line-height: 90px;
+}
+
+/* End. Video */
+
+/* St. Contact & Advertisements */
+
+section.contact {
+    background-color: #131313;
+    padding: 60px 0 40px;
+}
+
+section.contact .contact-us .title h4,
+section.contact .other-products .title h4 {
+    font-size: 25px;
+    line-height: 50px;
+    color: #758594;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section.contact .contact-us form .form-group {
+    margin-bottom: 6px;
+}
+
+section.contact .contact-us form .form-group input,
+section.contact .contact-us form .form-group textarea {
+    border-radius: 3px;
+    background-color: #242424;
+    font-size: 18px;
+    line-height: 38px;
+    color: #aeadad;
+    font-family: 'Cairo', sans-serif;
+    border-color: #242424;
+}
+
+section.contact .contact-us form button {
+    font-size: 18px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    background-color: #7233a2;
+    padding: 7px 24px;
+    border-color: transparent;
+}
+
+section.contact .contact-us form .error {
+    color: red;
+    font-weight: bold;
+}
+
+section.contact .other-products .media .media-body h5 {
+    font-size: 18px;
+    color: #aeadad;
+    margin-bottom: 15px;
+}
+
+section.contact .other-products .media .media-body p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #737373;
+}
+
+section.contact .other-products .media:not(last-of-type) {
+    margin-bottom: 25px;
+}
+
+section.contact .other-products .media img {
+    margin-right: 20px;
+}
+
+/* End. Contact & Advertisements */
+
+
+/* St. Footer */
+
+footer {
+    background-color: #1d1d1d;
+    padding: 10px;
+
+}
+
+footer .pd {
+    padding: 10px;
+}
+
+footer .pdd {
+    padding: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li a {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    color: inherit;
+    background-color: #718292;
+    border-radius: 50%;
+}
+
+footer ul li a:hover {
+    color: white;
+    transition: all .5 ease;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: #919191;
+    text-align: right;
+    margin: 0;
+}
+
+/* End. Footer */
+
+
+/*
+┌──────────────────────────────────────────┐
+│                Media Query               │
+└──────────────────────────────────────────┘
+*/
+
+
+@media (max-width: 575.98px) { 
+    header.header .overlay .header-text .buttons {
+        margin-bottom: 50px;
+    }
+
+    
+
+    header.header .overlay .product-img img.label, header.header .overlay .product-img p {
+        display: none;
+    }
+
+    header.header .overlay .header-text h3 {
+        font-size: 23px;
+    }
+
+    header.header .overlay .navbar-brand {
+        text-align: center;
+    }
+
+    header.header .overlay .header-text {
+        margin-top: 1rem;
+    }
+
+    section.features .media {
+        display: block;
+        text-align: center;
+    }
+
+    section.features .media .img-block {
+        display: none;
+    }
+
+    section.features .feature {
+        padding: 25px 0;
+    }
+    
+    section.features .feature:not(:last-of-type) {
+        border-bottom: none;
+    }
+
+    section.features .feature .media img {
+        margin: 0;
+    }    
+
+    section.prices .plan {
+        margin-top: 50px;
+    }
+
+    section.features .feature .media .media-body h5 {
+        font-size: 23px;
+        border-bottom: 2px solid #7233a2;
+        padding-bottom: 25px;
+        border-left: 0;
+        margin-bottom: 25px;
+    }
+
+    section.features .feature:nth-of-type(even) .media .media-body h5 {
+        border-right: none;
+    }
+
+    footer .pdd {
+        padding-bottom: 5px;
+    }    
+
+    footer .pd {
+        padding-bottom: 0;
+    }
+
+    section.contact {
+        padding: 0 0 40px;
+    }
+
+    section.contact .contact-us .title h4,
+    section.contact .other-products .title h4 {
+        text-align: center;
+        font-weight: bold;
+        margin: 30px 0 30px 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    section.contact .contact-us form button {
+        width: 100%;
+    }
+
+    footer.footer .list-inline {
+        text-align: center;
+    }
+
+    footer .copyright p {
+        text-align: center;
+    }
+
+ }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    header.header .overlay .header-text h3 {
+        font-size: 31px;
+    }
+
+    header.header .overlay .navbar-brand {
+        text-align: center;
+    }
+
+    header.header .overlay .header-text {
+        margin-top: 1.5rem;
+    }
+
+    header.header .overlay .product-img img.label, header.header .overlay .product-img p {
+        display: none;
+    }
+
+
+    section.features .media {
+        display: block;
+        text-align: center;
+    }
+
+    section.features .media .img-block {
+        display: none;
+    }
+
+    section.features .feature {
+        padding: 40px 0;
+    }
+    
+    section.features .feature:not(:last-of-type) {
+        border-bottom: none;
+    }
+
+    section.features .feature .media .media-body h5 {
+        font-size: 26px;
+        border-bottom: 2px solid #7233a2;
+        padding-bottom: 25px;
+        border-left: 0;
+        margin-bottom: 25px;
+    }
+
+    section.features .feature:nth-of-type(even) .media .media-body h5 {
+        border-right: none;
+    }
+
+    header.header .overlay .header-text .buttons {
+        margin-bottom: 50px;
+    }
+
+    section.contact {
+        padding: 0 0 40px;
+    }
+
+    section.contact .contact-us .title h4,
+    section.contact .other-products .title h4 {
+        text-align: center;
+        font-weight: bold;
+        margin: 8% 0 8% 0;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    section.contact .contact-us form button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    header.header .container {
+        width: 95%;
+    }
+
+    section.features .container,
+    section.prices .container,
+    section.faq .container,
+    section.contact .container,
+    footer.footer .container{
+        width: 100%;
+    }
+
+    section.features .feature .media .media-body h5 {
+        font-size: 20px;
+    }
+
+    section.features .feature .media .media-body h5 {
+        padding: 0 10px;
+    }
+
+    section.features .feature .media img {
+        margin: 0 2rem;
+    }
+
+    header.header .overlay .header-text {
+        margin-top: 5rem;
+    }
+
+    header.header .overlay .header-text h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+        line-height: 40px;
+    }
+
+    header.header .overlay .header-text .buttons {
+        margin-bottom: 50px;
+    }
+
+    section.features .feature .media .media-body h5 {
+        font-size: 22px;
+    }
+ }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    header.header .overlay .header-text {
+        margin-top: 5rem;
+    }
+
+    header.header .overlay .header-text h3 {
+        font-size: 30px;
+    }
+ }
+
+@media (min-width: 1200px) {}
+
+
+@media (max-width: 500px) {
+    section.features .feature .media .media-body h5 {
+        font-size: 20px;
+    }
+
+    section.features .feature .media .media-body p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    header.header .overlay .header-text h3 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    section.video button {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    header.header .overlay .header-text h3 {
+        font-size: 19px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 350px) {
+    section.contact .other-products .media .media-body h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    section.video button {
+        font-size: 20px;
+    }
+
+    section.faq .card .card-header h5 a {
+        font-size: 15px;
+    }
+
+    section.features .feature .media .media-body h5 {
+        font-size: 18px;
+    }
+
+    header.header .overlay .header-text .buttons button {
+        padding: 10px 27px;
+    }
+
+    header.header .overlay .header-text p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    header.header .overlay .header-text h3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    header.header .overlay .header-text .buttons {
+        text-align: center;
+    }
+}
+
+/*
+┌──────────────────────────────────────────┐
+│         Coding by M. Shikh Taleb         │
+│            www.shikhtaleb.com            │
+└──────────────────────────────────────────┘
+*/

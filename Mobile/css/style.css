@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    direction: ltr;
+}
+
+/* End. Heading */
+section.banner {
+    background-image: url(../images/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -3;
+}
+
+section.banner .overlay {
+    background-color: rgba(239, 71, 58, 0.8);
+    z-index: -2;
+    position: relative;
+    padding-top: 90px;
+}
+
+section.banner .overlay .images {
+    position: absolute;
+    bottom: -250px;
+    right: 0;
+    z-index: -1;
+}
+
+section.banner .overlay .images img {
+    max-width: 100%;
+}
+
+section.banner .overlay .app-icon img {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+section.banner .overlay .banner-text h1 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+section.banner .overlay .banner-text p {
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+section.banner .overlay .banner-text button {
+    margin: 40px 0;
+    background-color: #FAFAFA;
+    line-height: 50px;
+}
+
+section.banner .overlay .banner-text button img {
+    width: 50px;
+}
+
+section.banner .overlay .banner-text button p {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #090909;
+    line-height: 25px;
+    display: inline-block;
+}
+
+section.banner .overlay .banner-text button:last-child {
+    margin-left: 20px;
+}
+
+/* End. Heading */
+
+
+/* St. Features */
+
+section.feature {
+    background-color: white;
+    padding: 82px 0;
+}
+
+section.feature .features {
+    margin-top: 90px;
+}
+
+section.feature .features .media {
+    margin-bottom: 70px;
+}
+
+section.feature .features .media-body h5 {
+    font-size: 24px;
+    color: #080808;
+    margin-bottom: 12px;
+}
+
+section.feature .features .media-body p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+}
+
+section.feature .features i {
+    color: white;
+    background-color: #EF473A;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+section.feature .mobile-img img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* End. Features */
+
+
+/* St. options & image */
+
+section.option {
+    padding: 120px 0 0;
+    background-color: #F8F8F8;
+    z-index: -2;
+    position: relative;
+}
+
+section.option .images {
+    position: absolute;
+    bottom: -150px;
+    z-index: -1;
+}
+
+section.option .options {
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+section.option .options .media {
+    margin-bottom: 60px;
+}
+
+section.option .options .media h5 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #141414;
+}
+
+section.option .options .media p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #757474;
+    margin-left: 60px;
+}
+
+/* End. options & image */
+
+
+/* St. Slider => Carousel */
+
+section.slider {
+    padding: 80px 0;
+    background-color: white;
+}
+
+section.slider .title {
+    margin-bottom: 60px;
+}
+
+section.slider .title h3 {
+    font-size: 36px;
+}
+
+section.slider .carousel-inner {
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.slider .carousel-indicators {
+    padding: 0;
+    bottom: -60px;
+}
+
+section.slider .carousel-indicators li {
+    max-width: 20px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #EF473A;
+    border-radius: 50%;
+}
+
+section.slider .carousel-indicators li.active {
+    background-color: #EF473A;
+}
+
+section.slider .carousel-control-next,
+section.slider .carousel-control-prev {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #EF473A;
+    border-radius: 50%;
+    color: #EF473A;
+    opacity: 1;
+    margin: auto;
+}
+
+/* End. Slider => Carousel */
+
+
+/* St. FAQ */
+
+section.faq {
+    background-image: url('../images/bg-2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.faq .overlay {
+    padding: 70px 0 80px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+section.faq .overlay .title {
+    margin-bottom: 60px;
+}
+
+section.faq .overlay .title h3 {
+    font-size: 30px;
+    color: white;
+}
+
+section.faq .overlay .card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 25px;
+}
+
+section.faq .overlay .card .card-header {
+    border-bottom: 0;
+    background-color: transparent;
+}
+
+section.faq .overlay .card .card-header h5 a {
+    font-size: 18px;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+section.faq .overlay .card .card-header h5 a:focus,
+section.faq .overlay .card .card-header h5 a:hover {
+    text-decoration: none;
+}
+
+section.faq .overlay .card .card-header h5 a i {
+    position: absolute;
+    top: 2px;
+    right: 4.5px;
+}
+
+section.faq .overlay .card .card-block {
+    font-size: 15px;
+    line-height: 20px;
+    color: #C9C9C9;
+    padding: 0 1.25rem 1.25rem;
+}
+
+section.faq .overlay .card .card-header h5 a.collapsed[aria-expanded="false"] i:before {
+    content: '\f107';
+}
+
+/* End. FAQ */
+
+
+/* St. Footer */
+
+footer {
+    background-color: #232323;
+}
+
+footer .footer .widget .title {
+    margin-bottom: 35px;
+    border-bottom: 2px solid #272727;
+    position: relative;
+}
+
+footer .footer .widget .title::after {
+    width: 90px;
+    height: 2px;
+    background-color: #EF473A;
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: inline-block;
+}
+
+footer .footer .widget .title h4 {
+    font-size: 24px;
+    color: #F4F8Fb;
+    line-height: 80px;
+}
+
+footer .footer .widget .content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #757474;
+    margin-bottom: 0;
+}
+
+footer .footer .widget .content ul.social-links {
+    padding: 0;
+    margin-top: 60px;
+}
+
+footer .footer .widget .content ul.social-links li {
+    margin-right: 8px;
+}
+
+footer .footer .widget .content ul.social-links li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background-color: #353638;
+    color: #fff;
+    text-align: center;
+}
+
+footer .footer .widget .content ul.social-links li a:hover {
+    background-color: #EF473A;
+}
+
+footer .footer .widget .content ul.social-links li a i {
+    line-height: 50px;
+}
+
+footer .footer .widget .content ul.tweets {
+    padding: 0;
+}
+
+footer .footer .widget .content ul.tweets li {
+    font-size: 15px;
+    color: #757474;
+    line-height: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2A2929;
+    position: relative;
+    text-indent: 20px;
+    padding-left: 10px;
+}
+
+footer .footer .widget .content ul.tweets li:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 0px;
+}
+
+footer .footer .widget .content ul.tweets li::before {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    line-height: 1em;
+    color: #EF473A;
+}
+
+footer .footer .widget .content form input {
+    font-size: 14px;
+    color: 14px;
+    line-height: 25px;
+    background-color: #2C2B2B;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0;
+    border-color: transparent;
+    margin-bottom: 15px;
+}
+
+footer .footer .widget .content form button {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    line-height: 25px;
+    background-color: #EF473A;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+footer .copyright {
+    border-top: 2px solid #262626;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    line-height: 70px;
+    color: #565656;
+}
+
+footer .footer .widget .content form .error {
+    color: red;
+    display: block;
+}
+
+/* End. Footer */
+
+
+/*
+┌──────────────────────────────────────────┐
+│                Media Query               │
+└──────────────────────────────────────────┘
+*/
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* St. Features */
+
+    section.feature .features {
+        margin-top: 70px;
+    }
+
+    section.feature .features .media {
+        margin-bottom: 40px;
+    }
+
+    /* End. Features */
+
+
+    /* St. options & image */
+
+    section.option {
+        padding: 50px 0 0;
+    }
+
+    section.option .options .media {
+        margin-bottom: 40px;
+    }
+
+    section.option .options .media h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    section.option .options .media p {
+        margin-left: 20px;
+    }
+
+    section.option .images img { 
+        width: 4in;
+    }
+
+    section.option .images {
+        bottom: -7pc;
+    }
+
+    /* End. options & image */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* St. Heading */
+
+    section.banner .overlay .app-icon img {
+        margin-bottom: 25px;
+    }
+
+    section.banner .overlay .banner-text button:last-child {
+        margin-left: 0;
+    }
+
+    section.banner .overlay .banner-text button {
+        margin: 20px auto 20px;
+    }
+
+    section.banner .overlay .app-icon img {
+        margin-top: 0;
+    }
+
+    section.banner .overlay .images {
+        bottom: -200px;
+    }
+
+    section.banner .overlay .banner-text button p {
+        font-size: 17px;
+    }
+
+    section.banner .overlay .banner-text button img {
+        width: 35px;
+    }
+
+    section.banner .overlay .banner-text h1 {
+        font-size: 24px;
+    }
+
+    /* End. Heading */
+
+
+    /* St. Features */
+
+    section.feature .features {
+        margin-top: -20px;
+    }
+
+    section.feature .features .media {
+        margin-bottom: 35px;
+    }
+
+    section.feature .features i {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    section.feature {
+        padding: 90px 0 0;
+    }
+
+    /* End. Features */
+
+
+    /* St. options & image */
+
+    section.option {
+        overflow: hidden;
+        padding: 0;
+    }
+
+    section.option .options {
+        margin-right: 0;
+    }
+
+    section.option .images img { 
+        width: 3.3in;
+    }
+
+    section.option .options .media h5 {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    section.option .options .media p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-left: 0px;
+    }
+
+    section.option .options .media {
+        margin-bottom: 30px;
+    }
+
+    section.option .images {
+        bottom: -75px;
+    }
+
+    /* End. options & image */
+
+
+    /* St. FAQ */
+
+    section.faq .overlay .card .card-header h5 a {
+        font-size: 15px;
+    }
+
+    /* End. FAQ */
+
+
+    /* St. Footer */
+
+    footer .footer .widget .content ul.social-links li a {
+        width: 40px;
+        height: 40px;
+    }
+    
+    footer .footer .widget .content ul.social-links li a i {
+        line-height: 40px;
+    }
+
+    footer .footer .widget .content p {
+        font-size: 16px;
+    }
+
+    /* St. Footer */
+}
+
+@media (min-width: 576px) and (max-width: 767px) { 
+
+    /* St. Heading */
+
+    section.banner .overlay .images {
+        bottom: -500px;
+        right: 20%;
+        direction: rtl;
+    }
+
+    section.banner .overlay .app-icon img {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    section.banner .overlay .banner-text {
+        margin-bottom: 350px;
+    }
+
+    section.banner .overlay .banner-text button {
+        padding: .5rem 1rem;
+        line-height: 40px;
+    }
+
+    section.banner .overlay .banner-text button img {
+        width: 40px;
+    }
+
+    section.banner .overlay .banner-text p {
+        margin-bottom: 0;
+    }
+
+    /* End. Heading */
+
+
+    /* St. Features */
+
+    section.feature {
+        padding: 0;
+    }
+
+    section.feature .features {
+        margin-top: 70px;
+    }
+
+    section.feature .features .media {
+        margin-bottom: 50px;
+    }
+
+    /* End. Features */
+
+    
+    /* St. options & image */
+
+    section.option {
+        padding: 0;
+    }
+
+    section.option .options {
+        margin-bottom: 35pc;
+        margin-right: 0;
+    }
+
+    section.option .images {
+        bottom: -12.5in;
+        left: 10vw;
+        right: 10vw;
+    }
+
+    section.option .options .media h5 {
+        font-size: 21px;
+    }
+
+    section.option .options .media p {
+        margin-left: 0;
+    }
+
+    /* End. options & image */
+
+
+    /* St. Footer */
+
+    footer .footer .widget .content form button {
+        width: 100%;
+    }
+
+    /* End. Footer */
+}
+
+@media (max-width: 575px) {
+
+    /* St. Heading */
+
+    section.banner .overlay .images {
+        bottom: -500px;
+        right: 25%;
+        left: 25%;
+        direction: rtl;
+    }
+
+    section.banner .overlay .banner-text {
+        margin-bottom: 350px;
+        text-align: center;
+    }
+
+    section.banner .overlay .banner-text h1 {
+        font-size: 29px;
+    }
+
+    section.banner .overlay .app-icon img {
+        margin: 0 auto 30px;
+        display: block;
+    }
+
+    section.banner .overlay .banner-text button:last-child {
+        margin: 0 0 5rem 20px;
+    }
+
+    section.banner .overlay .banner-text button {
+        margin: 0 0 80px;
+    }
+
+    /* End. Heading */
+
+
+    /* St. Features */
+
+    section.feature {
+        padding: 0;
+    }
+
+    section.feature .features {
+        margin-top: 50px;
+    }
+
+    section.feature .features .media {
+        margin-bottom: 50px;
+    }
+
+    /* End. Features */
+
+    
+    /* St. options & image */
+
+    section.option {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    section.option .options {
+        margin-bottom: 30pc;
+        margin-right: 0;
+    }
+
+    section.option .images {
+        bottom: -74.5pc;
+        left: 7vw;
+        right: 7vw;
+    }
+
+    section.option .options .media h5 {
+        font-size: 3.8vw;
+        font-weight: bold;
+    }
+
+    section.option .options .media p {
+        margin-left: 0;
+    }
+
+    /* End. options & image */
+
+
+    /* St. Footer */
+
+    footer .footer .widget .content form button {
+        width: 100%;
+    }
+    
+    /* End. Footer */
+}
+
+@media (max-width: 505px) {
+
+    /* St. Heading */
+
+    section.banner .overlay .images {
+        bottom: -100vw;
+        right: 20%;
+        left: 20%;
+    }
+
+    section.banner .overlay .banner-text button:last-child {
+        margin: 0 0 5rem;
+    }
+
+    section.banner .overlay .banner-text button {
+        margin: 0 0 80px;
+    }
+
+    /* End. Heading */
+
+
+    /* St. options & image */
+
+    section.option .images {
+        left: 3.5vw;
+        right: 3.5vw;
+    }
+
+    /* End. options & image */
+}
+
+@media (max-width: 500px) {
+    section.banner .overlay .banner-text h1 {
+        font-size: 25px;
+    }
+
+    section.option .options .media h5 {
+        font-size: 3.7vw;
+    }
+
+    section.slider .carousel-control-next, section.slider .carousel-control-prev {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 486px) {
+
+    /* St. Heading */
+
+    section.banner .overlay .images {
+        bottom: -100vw;
+        right: 18%;
+        left: 18%;
+    }
+
+    section.banner .overlay .banner-text button {
+        margin: 0 0 60px;
+    }
+
+    section.banner .overlay .banner-text button:last-child {
+        margin: 0 0 60px 0;
+    }
+
+    /* End. Heading */
+
+
+    /* St. Options & image */
+
+    section.option .options .media h5 {
+        margin-bottom: 0;
+    }
+
+    /* End. Options & image */
+}
+
+@media (max-width: 469px) {
+
+    /* St. Heading */
+    section.banner .overlay .banner-text button {
+        margin: 0 0 20px;
+    }
+
+    section.banner .overlay .banner-text button:last-child {
+        margin: 0 0 1in 0;
+    }
+
+    /* End. Heading */
+
+
+    /* St. options & image */
+
+    
+    section.option .images img  {
+        width: 4in;
+    }
+
+    section.option .images {
+        bottom: -66pc;
+        right: 5%;
+        left: 5%;
+    }
+
+    /* End. options & image */
+}
+/******************/
+@media (max-width: 450px) {
+    section.banner .overlay .banner-text h1 {
+        font-size: 22px;
+    }
+
+    section.option .options .media h5 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    section.banner .overlay .banner-text h1 {
+        font-size: 20px;
+    }
+
+    section.banner .overlay .images {
+        bottom: -20pc;
+    }
+
+    section.option .options .media h5 {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    section.option .images {
+        bottom: -60pc;
+        right: 10%;
+        left: 10%;
+    }
+
+    section.option .images img {
+        width: 3in;
+    }
+
+    section.slider .title h3 {
+        font-size: 30px;
+    }
+
+    section.faq .overlay .card .card-header h5 a {
+        font-size: 15px;
+    }
+
+    section.faq .overlay .title h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 350px) {
+    section.banner .overlay .banner-text h1 {
+        font-size: 5.70vw;
+    }
+
+    section.banner .overlay .images {
+        bottom: -70vw;
+    }
+
+    section.option .images {
+        bottom: -63pc;
+        right: 5%;
+        left: 5%;
+    }
+
+    section.option .options {
+        margin-bottom: 120vw;
+    }
+
+    section.slider .carousel-control-next, section.slider .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+    }
+
+    section.slider .title {
+        margin-bottom: 40px;
+    }
+
+    section.slider .title h3 {
+        font-size: 25px;
+    }
+
+    section.faq .overlay .title h3 {
+        font-size: 18px;
+    }
+
+    section.faq .overlay .card .card-header h5 a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 300px) {}
+
+/*
+┌──────────────────────────────────────────┐
+│         Coding by M. Shikh Taleb         │
+│            www.shikhtaleb.com            │
+└──────────────────────────────────────────┘
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

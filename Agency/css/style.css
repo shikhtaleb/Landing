@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    direction: ltr;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
+
+.map-info {
+    width: 100%;
+}
+
+/* St. Navigation */
+
+nav.navbar {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    border-bottom: 1px solid transparent;
+    z-index: 10;
+}
+
+nav.navbar button.navbar-toggler {
+    margin: 30px auto;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+nav.navbar button.navbar-toggler:focus {
+    outline: none;
+}
+
+nav.navbar button.navbar-toggler span {
+    color: #ffffff;
+}
+
+nav.navbar .navbar-brand img {
+    width: 80%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+nav.navbar ul.navbar-nav {
+    padding-right: 0;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 40px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active {
+    color: #16aeca;
+    background-color: #ffffff;
+}
+
+nav.navbar.noTransparent {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+nav.navbar.noTransparent button.navbar-toggler {
+    margin: 30px auto;
+}
+
+nav.navbar.noTransparent button.navbar-toggler span {
+    color: #16aeca;
+}
+
+nav.navbar.noTransparent .navbar-brand img {
+    width: 70%;
+}
+
+nav.navbar.noTransparent ul.navbar-nav li a.nav-link {
+    color: #16aeca;
+}
+
+nav.navbar.noTransparent ul.navbar-nav li a.nav-link:hover, nav.navbar.noTransparent ul.navbar-nav li a.nav-link.active {
+    color: #dae413;
+    background-color: #16aeca;
+}
+
+/* End. Navigation */
+
+
+/* St. Header */
+
+header {
+    background-image: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header .overlay {
+    background: linear-gradient(to right,
+    rgba(41, 153, 155, 0.8) 0%,
+    rgba(167, 173, 44, 0.8) 100%
+    );
+    height: 100vh;
+}
+
+header .overlay .slider .carousel-inner .carousel-item {
+    min-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+    bottom: 30%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 30px;
+    line-height: 50px;
+    transform: translateY(-50px);
+    transition: all 1s ease;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption a {
+    font-size: 18px;
+    line-height: 50px;
+    background-color: #16aeca;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 0px 2rem;
+    margin-top: 30px;
+    display: inline-block;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+header .overlay .slider .carousel-inner .carousel-item .carousel-caption a:hover {
+    text-decoration: none;
+    background-color: #dae413;
+    color: #555555;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active {
+    opacity: 1;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption {
+    opacity: 1;
+}
+
+header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption h3, header .overlay .slider .carousel-inner .carousel-item.active .carousel-caption a {
+    transform: translateY(0px);
+}
+
+header .overlay .slider .carousel-control-prev, header .overlay .slider .carousel-control-next {
+    top: auto;
+    bottom: 46%;
+    width: auto;
+}
+
+header .overlay .slider .carousel-control-prev i, header .overlay .slider .carousel-control-next i {
+    padding: 30px 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+}
+
+header .overlay .slider .carousel-control-prev {
+    left: 20px;
+}
+
+header .overlay .slider .carousel-control-next {
+    right: 20px;
+}
+
+/* End. Header */
+
+
+/* St. Services */
+
+section.services {
+    padding: 80px 0;
+}
+
+section.services .title h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section.services .title {
+    margin-bottom: 50px;
+}
+
+section.services .card {
+    background-color: white;
+    width: 100%;
+    height: 260px;
+    transition: all 1s ease;
+}
+
+section.services .card:hover {
+    height: 350px;
+}
+
+section.services .card img {
+    width: 140px;
+    margin: 40px auto 0;
+}
+
+section.services .card .card-block h4 {
+    font-size: 24px;
+    color: #070C0C;
+    line-height: 35px;
+}
+
+section.services .card .card-block p {
+    font-size: 15px;
+    line-height: 20px;
+    color: #919191;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+section.services .card:hover .card-block p {
+    opacity: 1;
+}
+
+/* End. Services */
+
+
+/* St. Gallery */
+
+section.gallery .title h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section.gallery .title {
+    margin-bottom: 50px;
+}
+
+section.gallery .work-gallery a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+section.gallery .work-gallery a .hover {
+    background-color: rgba(22, 174, 202, 0.9);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+section.gallery .work-gallery a:hover .hover {
+    opacity: 1;
+}
+
+section.gallery .work-gallery a .hover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+section.gallery .work-gallery .overlay-gallery {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 102%;
+    height: 100vh;
+    z-index: 10;
+    overflow: hidden;
+    padding: 5% 10%;
+    opacity: 0;
+    transition: all 1s ease;
+    margin-top: -100vh;
+}
+
+section.gallery .work-gallery .overlay-gallery:target {
+    opacity: 1;
+    margin-top: 0;
+}
+
+section.gallery .work-gallery .overlay-gallery img {
+    width: 100%;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+    font-size: 36px;
+    line-height: 52px;
+    color: #16aeca;
+    margin-bottom: 30px;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text ul {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #EFEFEF;
+    padding-right: 0;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text ul li a {
+    color: #555555;
+    transition: all .3s ease
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text ul li a:hover {
+    text-decoration: none;
+    color: #dae413;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text p {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 50px;
+    color: #919191;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 25px;
+    padding: 0 30px;
+    background-color: #16aeca;
+    color: white;
+    transition: all .5s ease;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit:hover,
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit:focus,
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit:active,
+section.gallery .work-gallery .overlay-gallery .gallery-text a.visit:hover:focus:active {
+    text-decoration: none;
+    background-color: #dae413;
+    color: initial;
+}
+
+section.gallery .work-gallery .overlay-gallery .gallery-text {
+    margin-top: 5%;
+}
+
+section.gallery .work-gallery .overlay-gallery a.close {
+    color: #16aeca;
+    position: absolute;
+    top: 4%;
+    right: 11%;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+section.gallery .work-gallery .overlay-gallery a.close:hover {
+    color: #dae413;
+}
+
+/* End. Gallery */
+
+
+/* St. Statistics */
+
+section.statistics {
+    background-image: url(../images/bg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.statistics .overlay {
+    background-color: rgba(22, 174, 202, 0.8);
+    padding: 100px 0;
+}
+
+section.statistics .overlay .stat p {
+    font-size: 18px;
+    color: #85ECFF;
+}
+
+section.statistics .overlay .stat .count {
+    font-size: 25px;
+    line-height: 60px;
+    color: #DDFAFF;
+}
+
+/* End. Statistics */
+
+
+/* St. Contact */
+
+section.contact {
+    background-color: white;
+    padding-top: 100px;
+}
+
+section.contact .info h3 {
+    font-size: 24px;
+    line-height: 50px;
+    color: #181c1c;
+    font-weight: bold;
+}
+
+section.contact .info ul {
+    padding: 0;
+}
+
+section.contact .info ul li {
+    font-size: 18px;
+    line-height: 25px;
+    color: #16aeca;
+    margin-bottom: 15px;
+}
+
+section.contact .info ul li i {
+    margin-right: 6px;
+}
+
+section.contact .form h3 {
+    font-size: 24px;
+    line-height: 50px;
+    color: #181C1C;
+    font-weight: bold;
+    margin: 50px auto 20px;
+}
+
+section.contact .form form input,
+section.contact .form form textarea {
+    background-color: #F7F7F7;
+    border: 2px solid #EEE;
+    border-radius: 3px;
+    color: #5C5C5C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 1rem;
+}
+
+section.contact .form form button {
+    background-color: #16AECA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border:0;
+}
+
+section.contact .cmxform {
+    width: 60%;
+    margin: 0 auto 50px;
+}
+
+section.contact .form form .error {
+    color: red;
+}
+
+/* End. Contact */
+
+
+/* St. Footer */
+
+footer .top-footer {
+    background-color: #171717;
+    padding: 75px 0;
+}
+
+footer .top-footer h3 {
+    font-size: 25px;
+    line-height: 45px;
+    color: #85ECFF;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+footer .top-footer h3:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15%;
+    width: 35px;
+    height: 2px;
+    background-color: #5C5C5C;
+}
+
+footer .top-footer p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #919191;
+    margin-bottom: 10%;
+}
+
+footer .top-footer ul {
+    padding: 0;
+}
+
+footer .top-footer ul.social li a i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #ACACAC;
+    transition: all .5s ease;
+}
+
+footer .top-footer ul.social li {
+    margin-right: 5px;
+}
+
+footer .top-footer ul.social li a:hover i {
+    background-color: #16aeca;
+    color: white;
+}
+
+footer .top-footer ul.contact-us li {
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #676767;
+}
+
+footer .top-footer ul.contact-us li:last-of-type {
+    margin-bottom: 0;
+}
+
+footer .top-footer ul.contact-us li i {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 2px;
+    background-color: #282828;
+    color: #ACACAC;
+    margin-right: 20px;
+}
+
+footer .copyright {
+    background-color: #111111;
+}
+
+footer .copyright p {
+    font-size: 15px;
+    line-height: 78px;
+    color: #919191;
+    margin-bottom: 0;
+}
+
+/* End. Footer */
+
+
+/*
+┌──────────────────────────────────────────┐
+│                Media Query               │
+└──────────────────────────────────────────┘
+*/
+
+@media (max-width: 1199px) {
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 30px;
+        line-height: 52px;
+        margin-bottom: 15px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery img {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991px) { 
+    .container {
+        width: 95%;
+    }
+
+    section.services .card .card-block p {
+        font-size: 13px;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+        bottom: 28%;
+    }
+
+    header .overlay .slider .carousel-control-prev, header .overlay .slider .carousel-control-next {
+        bottom: 45%;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    footer .top-footer ul.contact-us li {
+        margin-bottom: 30px;
+    }
+
+    .map-info {
+        width: 100%;
+    }
+
+    section.services .card .card-block h4 {
+        font-size: 21px;
+    }
+
+    section.services .card:hover {
+        height: 360px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 3.1vw;
+        margin-bottom: 5px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        font-size: 2vw;
+        margin-bottom: 3vw;
+        line-height: 3.5vw;
+    }
+
+    section.gallery .work-gallery .overlay-gallery img {
+        margin-top: 50px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text {
+        margin-top: 10%;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul li a,
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul li i {
+        font-size: 1.8vw;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 18px;
+        line-height: 45px;  
+    }
+
+    section.gallery .work-gallery .overlay-gallery {
+        padding: 5%;
+        width: 105%;
+    }
+
+    nav.navbar .navbar-brand img {
+        width: 70%;
+    }
+
+    nav.navbar.noTransparent .navbar-brand img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) { 
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption {
+        bottom: 30%;
+    }
+
+    section.services .card {
+        margin-bottom: 15%;
+    }
+
+    section.contact .cmxform, .map-info {
+        width: 100%;
+    }
+
+    section.contact .form form textarea {
+        height: 2in;
+    }
+
+    section.contact .form form button {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    section.contact {
+        padding-top: 7%;
+    }
+
+    footer .top-footer {
+        padding: 70px 0 20px;
+    }
+
+    .padding {
+        padding-bottom: 70px;
+    }
+
+    section.services .card:hover {
+        height: 300px;
+    }
+
+    .navbar {    
+		padding: .5rem 0rem;
+    }
+
+    nav.navbar .collapse {
+		background-color: #16aeca; 
+    }
+
+    nav.navbar .navbar-brand img {
+        width: 60%;
+    }
+
+    nav.navbar.noTransparent .navbar-brand img {
+        width: 50%;
+    }
+
+    nav.navbar.noTransparent .collapse{
+        background-color: white;
+    }
+
+    nav.navbar button.navbar-toggler {
+        margin: 20px auto;
+    }
+
+    nav.navbar.noTransparent button.navbar-toggler {
+        margin: 15px auto;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text {
+        margin-top: 13%;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 3.4vw;
+        margin-bottom: 0;
+        line-height: 6vw;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul li a,
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul li i {
+        font-size: 2vw;
+    }
+
+    header .overlay .slider .carousel-control-prev i,
+    header .overlay .slider .carousel-control-next i {
+        padding: 30px 15px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        font-size: 2vw;
+        line-height: 3.5vw;
+    }
+
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 2.5vw;
+        line-height: 6vw;
+        padding: 0 20px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery {
+        width: 105%;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 575px) { 
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .navbar-toggleable-sm > .container {
+        width: 100%;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    section.services .card:hover {
+        height: 300px;
+    }   
+    
+    footer .top-footer ul.contact-us li {
+        font-size: 17px;
+    }
+
+    header .overlay .slider .carousel-control-prev i, header .overlay .slider .carousel-control-next i {
+        border: 0;
+    }
+
+    .work-gallery .col-md > .col-sm > a {
+        display: block;
+    }
+    
+    .work-gallery .col-md > .col-sm > a img {
+        width: 100%;
+    }
+
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 50%;
+        height: auto;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text {
+        margin-top: 0;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 4vw;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text ul li a, section.gallery .work-gallery .overlay-gallery .gallery-text ul li i {
+        font-size: 15px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        font-size: 15px;
+        line-height: 40px;
+        padding: 0 25px;
+    }
+
+    section.gallery .work-gallery .overlay-gallery {
+        width: 107%;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text a.visit {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .col-sm {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 60%;
+    }
+
+    header .overlay .container {
+        width: 100%;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    header .overlay .slider .carousel-control-prev i, header .overlay .slider .carousel-control-next i {
+        display: none;
+    }
+
+    section.services .card:hover {
+        height: 320px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 70%;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 75%;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    section.services .card:hover {
+        height: 340px;
+    }
+}
+
+@media (max-width: 350px) {
+    section.gallery .work-gallery .overlay-gallery img {
+        width: 85%;
+    }
+
+    section.gallery .work-gallery .overlay-gallery .gallery-text h3 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    header .overlay .slider .carousel-inner .carousel-item .carousel-caption h3 {
+        font-size: 5vw;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 300px) {}
+
+/*
+┌──────────────────────────────────────────┐
+│         Coding by M. Shikh Taleb         │
+│            www.shikhtaleb.net            │
+└──────────────────────────────────────────┘
+*/
